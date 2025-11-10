@@ -1,6 +1,4 @@
-## My current understanding on Anchor Framework and it's working
-
-## Anchor Framework Overview
+## Anchor Framework Overview, trying to learn anchor beyond Dapps and trying to understand it's working; this report created by AI research
 
 Anchor is a Rust-based framework for Solana program development that uses procedural macros to generate boilerplate code for account serialization, instruction handling, error management, and cross-program invocations (CPIs), integrating with Solana's Rust SDK to enforce secure patterns like account validation at compile time while providing a CLI for project scaffolding, building, and deployment. It processes your declarative Rust code (e.g., via `#[program]` macro on a module containing instruction functions) to expand into low-level Solana primitives like entrypoint dispatchers that decode instructions from transaction data, deserialize accounts using Borsh, validate constraints (e.g., signer checks, mutability), execute your logic, and handle reverts with custom errors. This reduces manual implementation of Solana's verbose APIs, such as writing custom serializers or PDA derivations, allowing focus on program logic while ensuring compatibility with Solana's runtime.[^1][^2][^3][^4]
 
